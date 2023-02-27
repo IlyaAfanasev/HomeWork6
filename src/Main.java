@@ -8,8 +8,8 @@ public class Main {
         task6();
         task7();
         task8();
+        task9();
     }
-
     public static void task1 () {
         System.out.println("     Задача 1");
         for ( int i=1; i<=10; i++) {
@@ -62,10 +62,6 @@ public class Main {
         }
         System.out.println();
     }
-    /*Посчитайте с помощью цикла for сумму годовых накоплений,
-    если каждый месяц вы будете откладывать по 29 000 рублей «в банку».
-    Выведите сумму накоплений за каждый месяц в консоль в формате:
-    «Месяц …, сумма накоплений равна … рублей».*/
     public static void task8 () {
         System.out.println("     Задача 8");
         int salary = 29000;
@@ -74,6 +70,17 @@ public class Main {
             total=total+salary;
             System.out.println("Месяц "+i+ " сумма накоплений равна  "+total);
 
+        }
+        System.out.println();
+    }
+    public static void task9 () {
+        System.out.println("     Задача 9");
+        int salary = 29000;
+        int total = 0;
+        for ( int i=1; i<=12; i++) {
+            total=total+salary;
+            System.out.println("Месяц "+i+ " сумма накоплений равна  "+total);
+            total= total+total/100;
         }
         System.out.println();
     }
