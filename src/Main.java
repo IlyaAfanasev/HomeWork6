@@ -3,6 +3,7 @@ public class Main {
         task1();
         task2();
         task3();
+        task4();
     }
 
     public static void task1 () {
@@ -26,7 +27,12 @@ public class Main {
                 System.out.println(i);
             }
         }
-
+    }
+    public static void task4 () {
+        System.out.println("     Задача 4");
+        for ( int i=10; i>=-10; i--) {
+            System.out.println(i);
+        }
 
     }
 }
